@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn HTML with Josh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="step" id="step-1">
+        <h1>Welcome!</h1>
+        <p>You’re here to learn some HTML and CSS from the world’s greatest programmer — <b>Josh</b>.</p>
+        <p>I get it. You want to be amazing like me. Smart move.</p>
+        <p>This won’t take forever. Let’s just build something cool, fast, and useful.</p>
+        <br>
+        <p>This is not an extensive web development tutorial, this is more of a guide to build your first 'me page'.</p>
+        <button class="next-button" data-next="step-preview">Let’s Begin</button>
+    </div>
+
+    <div class="step" id="step-preview">
+        <h1>Preview: What You’ll Build</h1>
+        <p>This is your mission. This is... your future website.</p>
+        <div class="preview-container">
+            <img id="preview-img" src="preview_of_web.png" alt="Preview of final site">
+            <button id="reveal-button">Reveal Preview</button>
+        </div>
+        <p>And yes... you can make it pink.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-preview">&lt; Back</button>
+            <button class="next-button" data-next="step-2">Start Learning &gt;</button>
+        </div>
+    </div>
+    
+    
+    <div class="step" id="step-2">
+        <h1>What Even Is HTML?</h1>
+        <p>HTML is the skeleton of the web. It tells the browser, “Hey, here’s a heading, here’s a picture, here’s a paragraph.”</p>
+        <p>No style. No colours. Just pure structure. Like the bones in your body — only way more semantic.</p>
+        <p>Let me show you a simple HTML tag:</p>
+        <div class="code-box">
+            <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+        </div>
+        <p>That creates a big heading that says “Hello World”.</p>
+            <div class="navigation-buttons">
+        <button class="back-button" data-prev="step-1">&lt; Back</button>
+        <button class="next-button" data-next="step-3">Next &gt;</button>
+    </div>
+    </div>
+    
+    <div class="step" id="step-3">
+        <h1>Write Your First Page</h1>
+        <p>Open VS Code (or any code editor other than CoCalc) and create a file called <code>index.html</code>.</p>
+        <p>Paste this in:</p>
+        <p>(or use that '!' trick I taught you)</p>
+        <div class="code-box">
+            <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My First Page&lt;/title&gt;<br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt; <br> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--this is a comment in HTML--&gt; <br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+        </div>
+        <p>Now open that file in your browser as a live server. Figure it out.</p>
+        <p>Boom. That’s HTML in action.</p>
+            <div class="navigation-buttons">
+        <button class="back-button" data-prev="step-2">&lt; Back</button>
+        <button class="next-button" data-next="step-4">Next &gt;</button>
+    </div>
+    </div>
+    
+    <div class="step" id="step-4">
+        <h1>Tags and Nesting</h1>
+        <p>Everything in HTML is made of <b>tags</b>. Most of them come in pairs: <code>&lt;tag&gt;</code> and <code>&lt;/tag&gt;</code>.</p>
+        <p>You can <b>nest</b> them too. Like this:</p>
+        <div class="code-box">
+            <code>
+                &lt;div&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;<br>
+                &lt;/div&gt;
+            </code>
+        </div>
+        <p>Use tabs or spaces to indent when nesting. It doesn’t change how the browser renders it, but it makes your code readable. Because non-readable code sucks.</p>
+            <div class="navigation-buttons">
+        <button class="back-button" data-prev="step-3">&lt; Back</button>
+        <button class="next-button" data-next="step-5">Next &gt;</button>
+    </div>
+    </div>
+    
+    <div class="step" id="step-5">
+        <h1>The Power of the &lt;div&gt;</h1>
+        <p><code>&lt;div&gt;</code> is like a box you can use to group stuff together.</p>
+        <p>Think of it like a container. You can put anything inside: text, images, other divs... even more divs (inception). You’ll use it constantly.</p>
+        <p>Example:</p>
+        <div class="code-box">
+            <code>
+                &lt;div&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Project Title&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;A short project description.&lt;/p&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;View on GitHub&lt;/a&gt;<br>
+                &lt;/div&gt;
+            </code>
+        </div>
+        <p>Now that you understand structure... it's time to learn about one last thing before we build your page.</p>
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-4">&lt; Back</button>
+            <button class="next-button" data-next="step-text">Next &gt;</button>
+        </div>
+    </div>
+
+    <div class="step" id="step-text">
+        <h1>Headings and Paragraphs</h1>
+    
+        <p>Let’s talk about <b>headings</b> and <b>text</b>. These are the building blocks of any webpage that needs to talk.</p>
+    
+        <ul>
+            <li><code>&lt;h1&gt;</code> is the most important heading — you only get one of these per page. It’s the big boss.</li>
+            <li><code>&lt;h2&gt;</code> to <code>&lt;h6&gt;</code> are subheadings, each one smaller and less important than the last.</li>
+            <li><code>&lt;p&gt;</code> is for normal text, like descriptions, paragraphs, humble ramblings, etc.</li>
+        </ul>
+    
+        <p>Here’s an example from a totally unbiased and accurate webpage:</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Code</button>
+            <div class="code-box blurred">
+                <code>
+                    &lt;h1&gt;Josh Is a Genius&lt;/h1&gt;<br>
+                    &lt;h2&gt;You Are Not Josh&lt;/h2&gt;<br>
+                    &lt;p&gt;You have a lot to learn. But it’s okay. Josh is here to help.&lt;/p&gt;
+                </code>
+            </div>
+        </div>
+    
+        <p>That’s how the web speaks: big bold headings, subheadings, and smooth paragraphs. You'll use this combo everywhere.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-5">&lt; Back</button>
+            <button class="next-button" data-next="step-6">Next &gt;</button>
+        </div>
+    </div>
+    
+
+    <div class="step" id="step-6">
+        <h1>🧭 Your Mission Starts Now</h1>
+    
+        <p>Alright. It’s time.</p>
+        <p>You’re going to build the same “Me Page” that I — Josh, greatest programmer alive — built myself. But you're going to do it one piece at a time.</p>
+    
+        <p>First, open this link in a new tab. This is the **finished example page** you’ll be recreating:</p>
+    
+        <p>
+            <a href="/example_me_page.html" target="_blank" style="font-weight: bold; color: #00ffcc;">
+                👉 Open the Example Page
+            </a>
+        </p>
+    
+        <p>Keep that tab open. This is your benchmark. Your target. Your rival. Your sworn HTML enemy.</p>
+    
+        <p>Now in another tab, open your own <code>index.html</code> file. Every time you build a new section, check it against mine.</p>
+    
+        <p>Let’s start building your header.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-text">&lt; Back</button>
+            <button class="next-button" data-next="step-7">Ready! &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-7">
+        <h1>Let’s Build Your Header</h1>
+    
+        <p>The header is the first thing someone sees. It usually includes:</p>
+        <ul>
+            <li>Your name — in a big, bold heading</li>
+            <li>A short sentence or tagline underneath</li>
+        </ul>
+    
+        <p>Let’s talk HTML for a sec:</p>
+        <p>Remember that your header has no styling, none at all. 
+            <br> Meaning it is just simple text. It won't look as beautiful as mine. But it's okay Dafne.
+        </p>
+    
+        <p><b>Your task:</b> In your <code>index.html</code> file, create a header section for yourself.</p>
+        <p>Use a <code>&lt;div&gt;</code>, include your name, and add a short sentence about what you are (Machine Learning Engineer, Physicist, Loser, Nerd ect.).</p>
+    
+        <p>Try it first! Then click below to see how I’d do it:</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Code</button>
+            <div class="code-box blurred">
+                <code>
+                    &lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Dafne the Loser&lt;/h1&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Aspiring Developer and Sherlock Holmes Enthusiast&lt;/p&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        </div>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-6">&lt; Back</button>
+            <button class="next-button" data-next="step-8">Next &gt;</button>
+        </div>
+    </div>
+
+    <div class="step" id="step-8">
+        <h1>🧍 About You + What You Can Do</h1>
+    
+        <p>Your page needs a bit of personality — and some proof you know stuff.</p>
+    
+        <p>First, create a new section underneath your header with a heading that says “About Me” and a paragraph about yourself.</p>
+    
+        <p>Write it however you want. Just keep it honest. Or funny. Or dangerously humble like me.</p>
+    
+        <p>Once you’ve done that, add another section below it with the heading “Skills”.</p>
+    
+        <p>Under “Skills”, list a few things you’re learning — like HTML, CSS, Git, whatever makes you feel powerful.</p>
+    
+        <p><b>Hint:</b> Use multiple <code>&lt;div&gt;</code> elements to create the little “skill boxes”. We'll add colour and style them later.  </p>
+    
+        <p>Need a peek at what it might look like?</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Code</button>
+            <div class="code-box blurred">
+                <code>
+                    &lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;About Me&lt;/h2&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;I'm Dafne, and I’m learning how to build websites thanks to the one and only Josh.&lt;/p&gt;<br>
+                    &lt;/div&gt;<br><br>
+    
+                    &lt;div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Skills&lt;/h2&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;HTML5&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;CSS3&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Git &amp; GitHub&lt;/div&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;Responsive Design&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        </div>
+    
+        <p>If you're code is similar to mine, then your structure is prolly really good, but it looks horrible. <br> Let's fix that with some CSS.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-7">&lt; Back</button>
+            <button class="next-button" data-next="step-9">Make It Pretty &gt;</button>
+        </div>
+    </div>
+
+    <div class="step" id="step-9">
+        <h1>Enter: CSS</h1>
+    
+        <p>Look — I’ll never be able to teach you all of CSS.</p>
+        <p>It’s big. It’s weird. It’s full of nonsense. But you don’t need all of it right now.</p>
+    
+        <p>All you need is <b>enough to make your site look good</b>, and enough intuition to learn anything else you need... when you need it.</p>
+    
+        <p>And lucky for you, most of CSS is only one Google search away.</p>
+    
+        <p>Over the next few steps, I’ll show you enough CSS to:
+            <ul>
+                <li>Make things look cleaner</li>
+                <li>Control layout, spacing, fonts</li>
+                <li>Make your page pink and full of bows</li>
+            </ul>
+        </p>
+    
+        <p>You ready to make your page look good?</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-8">&lt; Back</button>
+            <button class="next-button" data-next="step-10">Let's Do It &gt;</button>
+        </div>
+    </div>
+
+    <div class="step" id="step-10">
+        <h1>Set Up Your CSS</h1>
+    
+        <p>First, you need to create a file called <code>style.css</code>.</p>
+        <p>This is where all your styling will go.</p>
+    
+        <p>Then, you need to tell your HTML file to use that CSS file. That happens inside the <code>&lt;head&gt;</code> tag, like this:</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Code</button>
+            <div class="code-box blurred">
+                <code>
+                    &lt;head&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Me Page&lt;/title&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="style.css"&gt;<br>
+                    &lt;/head&gt;
+                </code>
+            </div>
+        </div>
+    
+        <p><b>Important:</b> make sure the CSS file is saved in the same folder as your HTML file.</p>
+    
+        <p>Once that’s in place, you’re ready to start styling!</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-9">&lt; Back</button>
+            <button class="next-button" data-next="step-11">CSS Time &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-11">
+        <h1>CSS 101: Talking to Your HTML</h1>
+    
+        <p>Here’s the big idea:</p>
+        <p>To style something with CSS, you first have to <b>target</b> it — tell the browser, “hey, I want this part to look different.”</p>
+    
+        <p>To do that, we use something called a <code>class</code>.</p>
+    
+        <p>You can add a class to any HTML element like this:</p>
+    
+        <div class="code-box">
+            <code>
+                &lt;div class="header"&gt;...&lt;/div&gt;
+            </code>
+        </div>
+    
+        <p>The name <code>header</code> is up to you. It can be anything (but no spaces). It’s just a label you use to identify that section.</p>
+    
+        <p>Once something has a class, you can write CSS to style it. The class name becomes the “selector.”</p>
+    
+        <p>Here’s what that looks like:</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Code</button>
+            <div class="code-box blurred">
+                <code>
+                    .header {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: #222;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;padding: 30px;<br>
+                    }
+                </code>
+            </div>
+        </div>
+    
+        <p>Let’s break it down:</p>
+        <ul>
+            <li><code>.header</code> — the dot means “target this class”</li>
+            <li>Everything inside the <code>{ }</code> is a style rule</li>
+            <li>Each rule ends with a semicolon <code>;</code></li>
+        </ul>
+    
+        <p>That’s it. That’s the core of CSS. Now let’s make your page look good.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-10">&lt; Back</button>
+            <button class="next-button" data-next="step-12">Next &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-12">
+        <h1>💅 Style the Header & About Me</h1>
+    
+        <p>Let’s give your page some life. You’re going to style both the header and the about section.</p>
+    
+        <p>Start with the header — it’s the face of your site.</p>
+    
+        <p>Add a class to your header <code>&lt;div&gt;</code>, like this:</p>
+    
+        <div class="code-box">
+            <code>
+                &lt;div class="header"&gt;...&lt;/div&gt;
+            </code>
+        </div>
+    
+        <p>Then head into <code>style.css</code> and write a selector for <code>.header</code>.</p>
+    
+        <p><b>Hint:</b> Try using <code>font-size</code>, <code>color</code>, and experiment with <code>padding</code>. Try to figure out what <code>padding</code> does and how to use it.</p>
+    
+        <p>Then do the same for your about section. Add <code>class="about"</code> and style it too. Same idea: font size, text color, padding. Keep it clean.</p>
+    
+        <p>When you're done, scroll and admire. It's not perfect, but it’s already way better than what we had before.</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Example CSS</button>
+            <div class="code-box blurred">
+                <code>
+                    .header {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 36px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;padding: 40px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: #333;<br>
+                    }<br><br>
+                    .about {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: #444;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;padding: 20px;<br>
+                    }
+                </code>
+            </div>
+        </div>
+    
+        <p>Now let’s fix that sad-looking Skills section.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-11">&lt; Back</button>
+            <button class="next-button" data-next="step-13">Fix the Skills Section &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-13">
+        <h1>📦 Style Your Skill Boxes</h1>
+    
+        <p>Time to turn those plain divs into nice little boxes.</p>
+    
+        <p></p>
+
+        <p>Start by giving the parent <code>&lt;div&gt;</code> a class - like <code>class="skills"</code>.</p>
+    
+        <p>Next give each skill <code>&lt;div&gt;</code> a class — like <code>class="skill"</code>.</p>
+
+        <p>Then in your CSS, think about adding:
+        <ul>
+            <li><code>background-color</code> (make it pop)</li>
+            <li><code>padding</code> (give it space)</li>
+            <li><code>width</code> and <code>height</code> (keep it boxy)</li>
+            <li><code>margin</code> (space between them)</li>
+        </ul>
+    
+        <p>Your boxes will now look like little skill tags. Except… there’s one problem.</p>
+    
+        <p><b>They’re all stacked on top of each other.</b></p>
+        <p>It’s hideous.</p>
+    
+        <p>Let’s fix that in the next step. But first — if you're stuck or just want to compare what you've written, you can reveal this:</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Example CSS</button>
+            <div class="code-box blurred">
+                <code>
+
+                    .skills {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;padding: 20px;<br>
+                    } <br> 
+                    <br>
+                    .skill {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: #e0e0e0;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;width: 100px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;height: 20px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;margin: 5px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 5px;<br>
+                    }
+                </code>
+            </div>
+        </div>
+    
+        <p>Let’s un-stack them next using Flexbox magic.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-12">&lt; Back</button>
+            <button class="next-button" data-next="step-14">Make Them Line Up &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-14">
+        <h1>🧲 Enter Flexbox</h1>
+    
+        <p>Right now, your skill boxes are stacked like pancakes.</p>
+        <p>But we want them side by side — like proud little tiles.</p>
+    
+        <p>To do that, we use something called <b>Flexbox</b>.</p>
+    
+        
+        <div class="code-box">
+            <code>
+                display: flex;
+            </code>
+        </div>
+        
+        <p>That’s it. Flexbox will make all the children line up next to each other.</p>
+        
+        <p>You can add some spacing too with:</p>
+        
+        <div class="code-box">
+            <code>
+                gap: 10px;
+            </code>
+        </div>
+        <p>All you have to do is add this to the <b>parent</b> of your skill divs (try apply it to your <code>skills</code> div that has your heading, and watch what happens.):</p>
+
+        <p>(You might want to create a parent div that includes all your skills div, but not your heading.)</p>
+    
+        <p>And boom — clean, side-by-side skills.</p>
+    
+        <p>Next up: we style the projects section. It’s a bit more advanced, but you’re totally ready.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-13">&lt; Back</button>
+            <button class="next-button" data-next="step-15">Next &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-15">
+        <h1>🕵️‍♀️ Inspect Like a Pro</h1>
+    
+        <p>Here's a secret: every great developer uses the browser’s Inspect tool.</p>
+    
+        <p>Right-click on any part of a webpage (like my beautiful example page), then click <b>"Inspect"</b>.</p>
+    
+        <p>Now click the little square with an arrow <b>(top-left corner of the DevTools)</b> — I’ll show you which one:</p>
+    
+        <div class="devtools-hint">
+            <!-- You’ll add a screenshot here -->
+            <p><i>[Insert screenshot of DevTools inspect element button here] -- Josh i cba to do allat, (try commit this after work tmrw)</i></p>
+        </div>
+    
+        <p>Once you’ve clicked that, hover over any part of the page. You’ll see how it’s built — HTML on one side, CSS rules on the other. Magic.</p>
+    
+        <p>This makes it way easier to see <i>why</i> your page looks funky ash — and why mine looks as beautiful as they come 😎</p>
+    
+        <hr>
+    
+        <p>Another tip: If you ever think, “I want the text to look... taller?” but can’t remember the property name...</p>
+    
+        <p>Just <b>Google it</b>. Or ask ChatGPT. Or ask a pigeon. You’ll get an answer in seconds.</p>
+    
+        <p><b>HTML and CSS are genuinely simple.</b> You don't have to memorize everything — just know how to figure it out.</p>
+    
+        <p>Now, let’s put those detective skills to use and build the Projects section.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-14">&lt; Back</button>
+            <button class="next-button" data-next="step-16">Build the Projects Section &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-16">
+        <h1>📁 Project Showcase</h1>
+    
+        <p>It’s time to flex those skills and show off your work.</p>
+    
+        <p>This section will hold your <b>projects</b> — each one should have:</p>
+        <ul>
+            <li>A title (like “Weather App”)</li>
+            <li>A short description</li>
+            <li>A link to the code or demo (hosted on GitHub or wherever)</li>
+        </ul>
+    
+        <p>We’re not introducing much new HTML here — except this:</p>
+    
+        <h3>🔗 The <code>&lt;a&gt;</code> Tag</h3>
+        <p>Use it to make links! Like this:</p>
+    
+        <div class="code-box">
+            <code>
+                &lt;a href="https://github.com/yourname/project"&gt;View on GitHub&lt;/a&gt;
+            </code>
+        </div>
+    
+        <p>The <code>href</code> attribute is the URL it goes to. Clicking the text will open the link.</p>
+    
+        <p>Now try this:</p>
+        <ul>
+            <li>Create a new <code>&lt;div&gt;</code> with class <code>"projects"</code></li>
+            <li>Inside, add one <code>&lt;div&gt;</code> for each project</li>
+            <li>Give each project a heading, a paragraph, and an anchor link</li>
+        </ul>
+    
+        <p><b>Hint:</b> You already know all the pieces. You’re just combining them now.</p>
+    
+        <p>Need a template? Go ahead — cheat a little:</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Example</button>
+            <div class="code-box blurred">
+                <code>
+                    &lt;div class="projects"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="project"&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Cool Website&lt;/h3&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;A super cool project I made using HTML and CSS.&lt;/p&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="https://github.com/yourname/project"&gt;View on GitHub&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                    &lt;/div&gt;
+                </code>
+            </div>
+        </div>
+    
+        <p>Add more projects if you want. Duplicate the same structure. Make it yours.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-15">&lt; Back</button>
+            <button class="next-button" data-next="step-17">Style the Projects &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-17">
+        <h1>🎨 Style the Projects</h1>
+    
+        <p>Your Projects section works, but let’s make it look like a real portfolio instead of a to-do list.</p>
+    
+        <p>Add a class to your outer <code>&lt;div&gt;</code> called <code>projects</code>, and another to each individual <code>&lt;div&gt;</code> inside — maybe call them <code>project</code>.</p>
+    
+        <p>Then in your CSS:</p>
+        <ul>
+            <li>Add <code>padding</code> and maybe a light <code>background-color</code> to <code>.projects</code></li>
+            <li>Give each <code>.project</code> some space (margin), rounded corners, and a soft background</li>
+            <li>Style the <code>&lt;a&gt;</code> tag — try a different color, or even an underline effect on hover</li>
+        </ul>
+    
+        <p><b>Optional:</b> Add a hover effect to make your projects pop!</p>
+    
+        <p>Need a jumpstart?</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Example CSS</button>
+            <div class="code-box blurred">
+                <code>
+                    .projects {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;padding: 20px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: #f5f5f5;<br>
+                    }<br><br>
+                    .project {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-color: white;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;margin: 10px 0;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;padding: 15px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 8px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;box-shadow: 0 2px 5px rgba(0,0,0,0.1);<br>
+                    }<br><br>
+                    .project a {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;color: #007bff;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>
+                    }<br><br>
+                    .project a:hover {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: underline;<br>
+                    }
+                </code>
+            </div>
+        </div>
+    
+        <p>Keep it clean, readable, and uniquely yours.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-16">&lt; Back</button>
+            <button class="next-button" data-next="step-18">Make it Downloadable &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-18">
+        <h1>📦 The Whole Codebase</h1>
+    
+        <p>In case you ever get stuck or curious:</p>
+    
+        <p><b>Everything you’ve seen here</b> — all the HTML, CSS, and even this walkthrough site — is available on my GitHub.</p>
+    
+        <p>That means:</p>
+        <ul>
+            <li>You can compare your version to mine anytime</li>
+            <li>You can download it, study it, tweak it, or mess it up completely</li>
+            <li>You can even steal my colors (but not my swagger)</li>
+        </ul>
+    
+        <p>And eventually... if you're feeling bold...</p>
+        <p><b>Submit a Pull Request.</b></p>
+        <p>Replace my version with yours — <i>but I’ll only accept it if it’s actually better.</i></p>
+    
+        <p>Here’s the link to the repo:</p>
+        <div class="code-box">
+            <code>
+                https://github.com/YOUR_USERNAME/me-page-tutorial
+            </code>
+        </div>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-17">&lt; Back</button>
+            <button class="next-button" data-next="step-19">Next &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-19">
+        <h1>📦 The Whole Codebase</h1>
+    
+        <p>In case you ever get stuck or curious:</p>
+    
+        <p><b>Everything you’ve seen here</b> — all the HTML, CSS, and even this walkthrough site — is available on my GitHub.</p>
+    
+        <p>That means:</p>
+        <ul>
+            <li>You can compare your version to mine anytime</li>
+            <li>You can download it, study it, tweak it, or mess it up completely</li>
+            <li>You can even steal my colors (but you can't steal my infinite aura)</li>
+        </ul>
+    
+        <p>And eventually... if you're feeling bold...</p>
+        <p><b>Submit a Pull Request.</b></p>
+        <p>Replace my version with yours — <i>but I’ll only accept it if it’s actually better.</i></p>
+    
+        <p>Here’s the link to the repo:</p>
+        <div class="code-box">
+            <code>
+                https://github.com/joshstromayer/dafnestutorialonweb
+            </code>
+        </div>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-18">&lt; Back</button>
+            <button class="next-button" data-next="step-20">Next &gt;</button>
+        </div>
+    </div>
+    
+        
+    <script src="script.js"></script>
+</body>
+</html>
