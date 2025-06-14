@@ -468,7 +468,38 @@
     
         <div class="navigation-buttons">
             <button class="back-button" data-prev="step-12">&lt; Back</button>
-            <button class="next-button" data-next="step-14">Make Them Line Up &gt;</button>
+            <button class="next-button" data-next="step-github-help">Next &gt;</button>
+        </div>
+    </div>
+
+    <div class="step" id="step-github-help">
+        <h1>📦 The Whole Codebase</h1>
+    
+        <p>In case you ever get stuck or curious:</p>
+    
+        <p><b>Everything you’ve seen here</b> — all the HTML, CSS, and even this walkthrough site — is available on my GitHub.</p>
+    
+        <p>That means:</p>
+        <ul>
+            <li>You can compare your version to mine anytime</li>
+            <li>You can download it, study it, tweak it, or mess it up completely</li>
+            <li>You can even steal my colors (but you can't steal my infinite aura)</li>
+        </ul>
+    
+        <p>And eventually... if you're feeling bold...</p>
+        <p><b>Submit a Pull Request.</b></p>
+        <p>Replace my version with yours — <i>but I’ll only accept it if it’s actually better.</i></p>
+    
+        <p>Here’s the link to the repo:</p>
+        <div class="code-box">
+            <code>
+                https://github.com/joshstromayer/dafnestutorialonweb
+            </code>
+        </div>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-13">&lt; Back</button>
+            <button class="next-button" data-next="step-14">Next &gt;</button>
         </div>
     </div>
     
@@ -505,7 +536,7 @@
         <p>Next up: we style the projects section. It’s a bit more advanced, but you’re totally ready.</p>
     
         <div class="navigation-buttons">
-            <button class="back-button" data-prev="step-13">&lt; Back</button>
+            <button class="back-button" data-prev="step-github-help">&lt; Back</button>
             <button class="next-button" data-next="step-15">Next &gt;</button>
         </div>
     </div>
@@ -651,34 +682,46 @@
     
         <div class="navigation-buttons">
             <button class="back-button" data-prev="step-16">&lt; Back</button>
-            <button class="next-button" data-next="step-18">Make it Downloadable &gt;</button>
+            <button class="next-button" data-next="step-18">Next &gt;</button>
         </div>
     </div>
     
     <div class="step" id="step-18">
-        <h1>📦 The Whole Codebase</h1>
+        <h1>🎯 Finish the Page: Add a Button</h1>
     
-        <p>In case you ever get stuck or curious:</p>
+        <p>Your website’s almost complete.</p>
+        
+        <p>Let’s finish it off with a final button at the bottom — something like “Download CV”, “Contact Me”, or “Hire Me”.</p>
     
-        <p><b>Everything you’ve seen here</b> — all the HTML, CSS, and even this walkthrough site — is available on my GitHub.</p>
+        <p><b>Hint:</b> Use a <code>&lt;a&gt;</code> tag wrapped around a <code>&lt;button&gt;</code> to link to your CV or email. You can also style the button however you want — round corners, bold colors, hover effect, the whole deal.</p>
     
-        <p>That means:</p>
-        <ul>
-            <li>You can compare your version to mine anytime</li>
-            <li>You can download it, study it, tweak it, or mess it up completely</li>
-            <li>You can even steal my colors (but not my swagger)</li>
-        </ul>
+        <p>Example layout:</p>
     
-        <p>And eventually... if you're feeling bold...</p>
-        <p><b>Submit a Pull Request.</b></p>
-        <p>Replace my version with yours — <i>but I’ll only accept it if it’s actually better.</i></p>
-    
-        <p>Here’s the link to the repo:</p>
         <div class="code-box">
             <code>
-                https://github.com/YOUR_USERNAME/me-page-tutorial
+                &lt;a href="cv.pdf" target="_blank"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;Download My CV&lt;/button&gt;<br>
+                &lt;/a&gt;
             </code>
         </div>
+    
+        <p><b>Or</b> you can link to your email using:</p>
+    
+        <div class="code-box">
+            <code>
+                &lt;a href="mailto:you@example.com"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;Contact Me&lt;/button&gt;<br>
+                &lt;/a&gt;
+            </code>
+        </div>
+    
+        <p>You made it this far. You’ve built your own portfolio from scratch — with <b>structure</b>, <b>style</b>, and <b>personality</b>.</p>
+    
+        <p><b>Now go finish it.</b> Make it yours. Be proud of what you've built.</p>
+
+        <p>The next pages are just some tips and possible improvements/ideas. 
+            <br>Skip through some or all of them if you want. 💔 🥀
+        </p>
     
         <div class="navigation-buttons">
             <button class="back-button" data-prev="step-17">&lt; Back</button>
@@ -687,35 +730,109 @@
     </div>
     
     <div class="step" id="step-19">
-        <h1>📦 The Whole Codebase</h1>
+        <h1>🖼 Add Your Face (Optional but Powerful)</h1>
     
-        <p>In case you ever get stuck or curious:</p>
+        <p>If this is a “Me Page,” people should probably see what you look like. Time to add a profile picture.</p>
     
-        <p><b>Everything you’ve seen here</b> — all the HTML, CSS, and even this walkthrough site — is available on my GitHub.</p>
+        <p>Add an <code>&lt;img&gt;</code> inside your <code>header</code> section.</p>
     
-        <p>That means:</p>
-        <ul>
-            <li>You can compare your version to mine anytime</li>
-            <li>You can download it, study it, tweak it, or mess it up completely</li>
-            <li>You can even steal my colors (but you can't steal my infinite aura)</li>
-        </ul>
+        <p>Give it a class so you can style it. Example:</p>
     
-        <p>And eventually... if you're feeling bold...</p>
-        <p><b>Submit a Pull Request.</b></p>
-        <p>Replace my version with yours — <i>but I’ll only accept it if it’s actually better.</i></p>
-    
-        <p>Here’s the link to the repo:</p>
         <div class="code-box">
             <code>
-                https://github.com/joshstromayer/dafnestutorialonweb
+                &lt;img src="your-image.jpg" class="profile-pic"&gt;
             </code>
         </div>
     
+        <p>Then in your CSS, make it round and clean. Something like:</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Example CSS</button>
+            <div class="code-box blurred">
+                <code>
+                    .profile-pic {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;width: 150px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;height: 150px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 50%;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border: 3px solid #444;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;object-fit: cover;<br>
+                    }
+                </code>
+            </div>
+        </div>
+    
+        
+        <p>(Notice how the profile picture is above or below the other content in the header? Fix that dude. Use nested divs, flex on some, no flex on others to align things vertically and horizontally.)</p>
+       
+        <p>If you’re going for a professional vibe, keep it clean. But if you want a thick pink border and a chaotic selfie — do you. Just know, it will look funky ash.</p>
+
         <div class="navigation-buttons">
             <button class="back-button" data-prev="step-18">&lt; Back</button>
-            <button class="next-button" data-next="step-20">Next &gt;</button>
+            <button class="next-button" data-next="step-20">Embed Other Websites &gt;</button>
         </div>
     </div>
+    
+    <div class="step" id="step-20">
+        <h1>🌐 Embedding External Websites</h1>
+    
+        <p>If you want to show off a project in action, you don’t have to just link to it — you can actually <b>embed</b> it right inside your site.</p>
+    
+        <p>To do this, we use the <code>&lt;iframe&gt;</code> tag.</p>
+    
+        <p>But you shouldn’t just slap it on the page. You want it to <b>fit nicely</b>, inside a container. That way, you can control the shape, size, and style.</p>
+    
+        <p>Here’s what the HTML might look like:</p>
+    
+        <div class="code-box">
+            <code>
+                &lt;div class="iframe-container"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe src="https://joshstromayer.github.io/tic-tac-toe/" class="responsive-frame"&gt;&lt;/iframe&gt;<br>
+                &lt;/div&gt;
+            </code>
+        </div>
+    
+        <p>And here’s what you’d put in your <code>style.css</code> file:</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show CSS</button>
+            <div class="code-box blurred">
+                <code>
+                    .iframe-container {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;width: 100%;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;max-width: 600px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;zoom: 0.6; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- this line can be quite important<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;aspect-ratio: 1 / 1;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 10px;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;overflow: hidden;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border: 2px solid #ccc;<br>
+                    }<br><br>
+                    .responsive-frame {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;width: 100%;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;height: 100%;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;border: none;<br>
+                    }
+                </code>
+            </div>
+        </div>
+    
+        <p>Live Example (from my own site):</p>
+        <div class="iframe-container" style="width: 90%; max-width: 400px; aspect-ratio: 1 / 1; border: 2px solid #ccc; border-radius: 10px; overflow: hidden;">
+            <iframe src="https://joshstromayer.github.io/tic-tac-toe/" class="responsive-frame" style="width: 100%; height: 100%; zoom: 0.5; border: none;"></iframe>
+        </div>
+        <p>Beautiful project isn't it?</p>
+        
+        <p>This shows your project as a little window people can <b>interact with</b> — right on your page.</p>
+        
+        <p><b>Note:</b> Some websites don’t allow being embedded for security reasons. But for your own projects, like ones on GitHub Pages, it usually works fine.</p>
+    
+        <p>Try it out! Embed your coursework, preferably some interractive or animated projects — whatever you’re proud of.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-19">&lt; Back</button>
+            <button class="next-button" data-next="step-21">Final Notes &gt;</button>
+        </div>
+    </div>
+    
     
         
     <script src="script.js"></script>

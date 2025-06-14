@@ -22,6 +22,15 @@
     color: white;
     padding: 40px;
     background-color: #333;
+    display: flex;
+}
+
+.header-content {
+    margin-left: 40px;
+}
+
+.header-content p {
+    font-size: 22px;
 }
 
 .about {
@@ -50,4 +59,12 @@
 
 .project a:hover {
     text-decoration: underline;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #444;
+    object-fit: cover;
 }
