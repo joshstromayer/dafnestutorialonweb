@@ -13,10 +13,16 @@ body {
     display: block;
 }
 
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 button {
     margin-top: 20px;
     padding: 10px 20px;
     background: #2ecc71;
+    border-radius: 5px;
     border: none;
     color: white;
     font-weight: bold;
@@ -40,7 +46,7 @@ button {
     width: 100%;
     max-width: 600px;
     filter: blur(10px);
-    transition: filter 0.5s ease;
+    transition: filter 0.3s ease;
     border-radius: 10px;
 }
 
@@ -59,9 +65,69 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.blurred-code-container {
+    position: relative;
+    margin: 20px 0;
 }
 
-.blurred-code-container .blurred {
-    filter: blur(6px);
-    transition: filter 0.3s ease;
+/* Container positioning */
+.blurred-code-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+/* Code box and blur effect */
+.blurred-code-container .code-box {
+    position: relative;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.blurred-code-container .code-box.blurred {
+    filter: blur(5px);
+    opacity: 0.6;
+}
+
+/* Show Code button — centered + styled */
+.blurred-code-container button.show-code-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 2;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #2ecc70;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide button on reveal */
+.blurred-code-container.revealed .show-code-button {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+#progress-bar-container {
+    width: 100%;
+    height: 6px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #00ff99;
+    transition: width 0.3s ease;
 }
