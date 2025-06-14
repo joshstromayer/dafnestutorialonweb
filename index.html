@@ -12,9 +12,9 @@
         <h1>Welcome!</h1>
         <p>You’re here to learn some HTML and CSS from the world’s greatest programmer — <b>Josh</b>.</p>
         <p>I get it. You want to be amazing like me. Smart move.</p>
-        <p>This won’t take forever. Let’s just build something cool, fast, and useful.</p>
         <br>
         <p>This is not an extensive web development tutorial, this is more of a guide to build your first 'me page'.</p>
+        <p>To properly learn HTML and CSS and maybe JS I can send you some resources, but I dont think you wanna do all that do you?</p>
         <button class="next-button" data-next="step-preview">Let’s Begin</button>
     </div>
 
@@ -34,7 +34,7 @@
     </div>
     
     <div class="step" id="step-2">
-        <h1>What Even Is HTML?</h1>
+        <h1>What Is HTML?</h1>
         <p>HTML is the skeleton of the web. It tells the browser, “Hey, here’s a heading, here’s a picture, here’s a paragraph.”</p>
         <p>No style. No colours. Just pure structure. Like the bones in your body — only way more semantic.</p>
         <p>Let me show you a simple HTML tag:</p>
@@ -43,7 +43,7 @@
         </div>
         <p>That creates a big heading that says “Hello World”.</p>
             <div class="navigation-buttons">
-        <button class="back-button" data-prev="step-1">&lt; Back</button>
+        <button class="back-button" data-prev="step-preview">&lt; Back</button>
         <button class="next-button" data-next="step-3">Next &gt;</button>
     </div>
     </div>
@@ -71,7 +71,7 @@
                 &lt;/html&gt;
             </code>
         </div>
-        <p>Now open that file in your browser as a live server. Figure it out.</p>
+        <p>Now open that file in your browser as a live server. (You gotta figure it out.)</p>
         <p>Boom. That’s HTML in action.</p>
             <div class="navigation-buttons">
         <button class="back-button" data-prev="step-2">&lt; Back</button>
@@ -159,14 +159,22 @@
         <p>First, open this link in a new tab. This is the **finished example page** you’ll be recreating:</p>
     
         <p>
-            <a href="/example_me_page.html" target="_blank" style="font-weight: bold; color: #00ffcc;">
+            <a href="https://joshstromayer.github.io/dafnestutorialonweb/example_me_page.html" target="_blank" style="font-weight: bold; color: #00ffcc;">
                 👉 Open the Example Page
             </a>
         </p>
     
-        <p>Keep that tab open. This is your benchmark. Your target. Your rival. Your sworn HTML enemy.</p>
+        <p>Keep that tab open. This is your benchmark Dafne. Your target. Your rival. Your sworn HTML enemy.</p>
+
+        <p>Second, more importantly. Open this link in a new tab. This is what your website would look like after you follow all the examples(it doesn't look too great)</p>
+
+        <p>
+            <a href="https://joshstromayer.github.io/dafnestutorialonweb/testing.html" target="_blank" style="font-weight: bold; color: #00ffcc;">
+                👉 Open the Example Page
+            </a>
+        </p>
     
-        <p>Now in another tab, open your own <code>index.html</code> file. Every time you build a new section, check it against mine.</p>
+        <p>Now in another tab, open your own <code>index.html</code> file. For now try not to compare them too much, because I'm amazing and you suck.</p>
     
         <p>Let’s start building your header.</p>
     
@@ -297,7 +305,7 @@
             <div class="code-box blurred">
                 <code>
                     &lt;head&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My Me Page&lt;/title&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;My 'Me Page'&lt;/title&gt;<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="style.css"&gt;<br>
                     &lt;/head&gt;
                 </code>
@@ -432,6 +440,7 @@
             <li><code>padding</code> (give it space)</li>
             <li><code>width</code> and <code>height</code> (keep it boxy)</li>
             <li><code>margin</code> (space between them)</li>
+            <li><code>border-radius</code> (round the corners)</li>
         </ul>
     
         <p>Your boxes will now look like little skill tags. Except… there’s one problem.</p>
@@ -462,8 +471,6 @@
                 </code>
             </div>
         </div>
-    
-        <p>Let’s un-stack them next using Flexbox magic.</p>
     
         <div class="navigation-buttons">
             <button class="back-button" data-prev="step-12">&lt; Back</button>
@@ -532,7 +539,7 @@
     
         <p>And boom — clean, side-by-side skills.</p>
     
-        <p>Next up: we style the projects section. It’s a bit more advanced, but you’re totally ready.</p>
+        <p>The next step is not totally necessary to learn implement, but it can be very helpful.</p>
     
         <div class="navigation-buttons">
             <button class="back-button" data-prev="step-github-help">&lt; Back</button>
@@ -551,7 +558,7 @@
     
         <div class="devtools-hint">
             <!-- You’ll add a screenshot here -->
-            <p><i>[Insert screenshot of DevTools inspect element button here] -- Josh i cba to do allat, (try commit this after work tmrw)</i></p>
+            <p><i>[Insert screenshot of DevTools inspect element button here] -- i cba to do that rn, try fix this before dafne sees</i></p>
         </div>
     
         <p>Once you’ve clicked that, hover over any part of the page. You’ll see how it’s built — HTML on one side, CSS rules on the other. Magic.</p>
@@ -593,7 +600,7 @@
     
         <div class="code-box">
             <code>
-                &lt;a href="https://github.com/yourname/project"&gt;View on GitHub&lt;/a&gt;
+                &lt;a href="https://joshstromayer.github.io/tic-tac-toe/"&gt;Mini example project&lt;/a&gt;
             </code>
         </div>
     
@@ -618,7 +625,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="project"&gt;<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Cool Website&lt;/h3&gt;<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;A super cool project I made using HTML and CSS.&lt;/p&gt;<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="https://github.com/yourname/project"&gt;View on GitHub&lt;/a&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="https://joshstromayer.github.io/tic-tac-toe/"&gt;View on GitHub&lt;/a&gt;<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
                     &lt;/div&gt;
                 </code>
@@ -729,7 +736,7 @@
     </div>
     
     <div class="step" id="step-19">
-        <h1>🖼 Add Your Face (Optional but Powerful)</h1>
+        <h1>🖼 Add Your Face</h1>
     
         <p>If this is a “Me Page,” people should probably see what you look like. Time to add a profile picture.</p>
     
@@ -762,8 +769,9 @@
     
         
         <p>(Notice how the profile picture is above or below the other content in the header? Fix that dude. Use nested divs, flex on some, no flex on others to align things vertically and horizontally.)</p>
+        <p>**Check my code if you want**</p>
        
-        <p>If you’re going for a professional vibe, keep it clean. But if you want a thick pink border and a chaotic selfie — do you. Just know, it will look funky ash.</p>
+        <p>If you’re going for a professional vibe, keep it clean. But if you want a thick pink border and a chaotic selfie — do you. Just know, it will look sillu ash.</p>
 
         <div class="navigation-buttons">
             <button class="back-button" data-prev="step-18">&lt; Back</button>
@@ -854,7 +862,7 @@
             </code>
         </div>
     
-        <h3>2. Add a Favicon (Tiny Icon in the Tab)</h3>
+        <h3>2. Add a Favicon (Tiny Icon in the Tab) -- notice how my one is a taco</h3>
         <p>To do this, you’ll need a small image file like <code>favicon.ico</code> or <code>.png</code>. Save it in your project folder.</p>
     
         <p>Then add this inside your <code>&lt;head&gt;</code>:</p>
@@ -863,7 +871,7 @@
             <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Code</button>
             <div class="code-box blurred">
                 <code>
-                    &lt;link rel="icon" href="favicon.png" type="image/png"&gt;
+                    &lt;link rel="icon" href="profile_picture.png" type="image/png"&gt;
                 </code>
             </div>
         </div>
@@ -878,6 +886,82 @@
         </div>
     </div>
     
+    <div class="step" id="step-22">
+        <h1>✨ Final Touches</h1>
+    
+        <p>Your page is looking great, but let’s make it look <b>amazing</b>.</p>
+    
+        <h2>1. Use a Custom Font</h2>
+        <p>Head to <a href="https://fonts.google.com" target="_blank">Google Fonts</a>, pick one you like, and follow their instructions to import it.</p>
+        <p><b>Hint:</b> You’ll add a link inside your <code>&lt;head&gt;</code>, and then apply the font using <code>font-family</code> in your CSS.</p>
+    
+        <h2>2. Add Hover Effects</h2>
+        <p>Make your links or buttons react when hovered over:</p>
+    
+        <div class="code-box">
+            <code>
+                a:hover {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;color: hotpink;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: underline;<br>
+                }<br>
+            </code>
+        </div>
+    
+        <h2>3. Add Transitions</h2>
+        <p>Smooth things out with:</p>
+        <div class="code-box">
+            <code>
+                button {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;transition: all 0.3s ease;<br>
+                }<br>
+            </code>
+        </div>
+    
+        <p>Feel free to get creative — you’ve earned it.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-21">&lt; Back</button>
+            <button class="next-button" data-next="step-23">Next &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-23">
+        <h1>🧠 What I Didn't Cover</h1>
+    
+        <p>There are a <b>few</b> tags and features in HTML we haven’t touched — and CSS goes deep.</p>
+    
+        <p>But for now, your <b>HTML is solid</b>. You understand structure, tags, classes, styling — the whole deal.</p>
+    
+        <p>As for CSS? Don’t worry about memorizing every property. It’s literally one Google search away.</p>
+    
+        <p>If you want to go further, ask me for some CSS resources. (If you’re feeling peculiar and want to become a proper web dev.)</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-22">&lt; Back</button>
+            <button class="next-button" data-next="step-24">Final page &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-24">
+        <h1>🏁 You Made It</h1>
+    
+        <p>You finished the entire thing. You should be proud :) </p>
+    
+        <p>Now all you need to do:</p>
+        <ul>
+            <li>Finish your Me Page</li>
+            <li>Add all the final touches</li>
+            <li>Then show it to me</li>
+        </ul>
+    
+        <p>I’ll critique it. I’ll laugh at you. And maybe — just maybe — I’ll be impressed.</p>
+    
+        <p>Go make it beautiful.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-23">&lt; Back</button>
+        </div>
+    </div>
     
         
     <script src="script.js"></script>
