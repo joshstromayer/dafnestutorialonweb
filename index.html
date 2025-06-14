@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Learn HTML with Josh</title>
+    <title>Building a 'Me Page'</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="taco.jpg" type="image/png">
 </head>
 <body>
 
@@ -31,7 +32,6 @@
             <button class="next-button" data-next="step-2">Start Learning &gt;</button>
         </div>
     </div>
-    
     
     <div class="step" id="step-2">
         <h1>What Even Is HTML?</h1>
@@ -150,7 +150,6 @@
         </div>
     </div>
     
-
     <div class="step" id="step-6">
         <h1>🧭 Your Mission Starts Now</h1>
     
@@ -829,7 +828,53 @@
     
         <div class="navigation-buttons">
             <button class="back-button" data-prev="step-19">&lt; Back</button>
-            <button class="next-button" data-next="step-21">Final Notes &gt;</button>
+            <button class="next-button" data-next="step-21">Next &gt;</button>
+        </div>
+    </div>
+    
+    <div class="step" id="step-21">
+        <h1>🧠 The Mysterious Head</h1>
+    
+        <p>You’ve been working inside the <code>&lt;body&gt;</code> so far — that’s where everything <b>visible</b> goes.</p>
+    
+        <p>But there’s another important section of every HTML document: the <code>&lt;head&gt;</code>.</p>
+    
+        <p>The <code>&lt;head&gt;</code> holds behind-the-scenes info about your page. It’s not visible to users, but it still makes your site better. Think of it like your site’s brain 🧠.</p>
+    
+        <p>Here are two useful things you can put there:</p>
+    
+        <h3>1. Give Your Page a Title</h3>
+        <p>This is what shows up in the browser tab.</p>
+    
+        <div class="code-box">
+            <code>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Dafne’s Amazing Website&lt;/title&gt;<br>
+                &lt;/head&gt;
+            </code>
+        </div>
+    
+        <h3>2. Add a Favicon (Tiny Icon in the Tab)</h3>
+        <p>To do this, you’ll need a small image file like <code>favicon.ico</code> or <code>.png</code>. Save it in your project folder.</p>
+    
+        <p>Then add this inside your <code>&lt;head&gt;</code>:</p>
+    
+        <div class="blurred-code-container">
+            <button onclick="this.nextElementSibling.classList.toggle('blurred'); this.remove()">Show Code</button>
+            <div class="code-box blurred">
+                <code>
+                    &lt;link rel="icon" href="favicon.png" type="image/png"&gt;
+                </code>
+            </div>
+        </div>
+    
+        <p>Now your site will have a custom icon in the tab — way more professional.</p>
+    
+        <p>Later, you can also put other cool stuff in the head like fonts, meta tags, and stylesheets — but for now, just having a title and icon is a great touch.</p>
+    
+        <div class="navigation-buttons">
+            <button class="back-button" data-prev="step-20">&lt; Back</button>
+            <button class="next-button" data-next="step-22">Almost Done &gt;</button>
         </div>
     </div>
     
